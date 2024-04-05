@@ -1,9 +1,11 @@
 """
-A package for calculating Canadian structural load factors as per NBCC-15
+A library for storing and calculating complete collections 
+of load factors according to your local building code. 
 """
-version = "0.1.0"
 
-from loadfactors_setuptools.loadfactors import (
+__version__ = "0.0.1"
+
+from loadfactors_flit.loadfactors import (
     Load,
     open_load_combinations,
     factored_max,

@@ -1,29 +1,15 @@
-[build-system] # Required
-requires = ["setuptools"] # Required
-build-backend = "setuptools.build_meta" # Required
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
-
-[project] # Required
-name = "loadfactors_setuptools" # Required
-version = "0.1.0"
-
-# Everything from here down is optional
-authors = [
-    {name = "Connor Ferster", email = "connor@structuralpython.com"}
-]
-dependencies = [
-    "numpy"
-]
+[project]
+name = "loadfactors_flit"
+authors = [{name = "Connor Ferster", email = "connor@structuralpython.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dynamic = ["version", "description"]
+dependencies = ["numpy", "pandas"]
 
 [project.urls]
-Home = "https://github.com/connorferster/loadfactors"
-
-[project.optional-dependencies]
-test = [
-    "pytest",
-]
-
-doc = [
-    "sphinx",
-    "nbsphinx"
-]
+Home = "https://github.com/connorferster/loadfactors_flit"

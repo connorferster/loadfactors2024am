@@ -32,7 +32,7 @@ L2 = Load( # A load with array values
 )
 
 
-def open_load_combinations(filename: str) -> dict:
+def open_load_combinations(filename='NBCC_vec.json') -> dict:
     """
     Returns a dict representing the load combinations contained
     in 'filename'.
