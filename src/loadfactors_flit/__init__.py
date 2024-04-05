@@ -3,7 +3,7 @@ A library for storing and calculating complete collections
 of load factors according to your local building code. 
 """
 
-__version__ = "0.0.1"
+__version__ = "0.1.0"
 
 from loadfactors_flit.loadfactors import (
     Load,
